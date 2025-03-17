@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <!-- <link rel="stylesheet" href="static/styles/styles.css"> -->
+    <link rel="stylesheet" href="static/styles/characters.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<style>
+    .set {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the items horizontally */
+    margin-bottom: 30px; /* Space between the sets */
+    }
+
+    img {
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Center the image */
+    }
+
+    .conteiner {
+        margin: 15px; /* Add some space between characters */
+        display: inline-block; /* Позволяет располагать элементы в строку */
+        text-align: center; }
+    /* }Центрирует текст под изображением */
+    
+    .hidden {
+        display: none; /* Class to hide elements */
+    }
+    .ww {
+        margin-top: 5px; /* Уменьшает отступ сверху для имен */
+        font-size: 20px; /* Увеличиваем размер шрифта */
+        font-weight: bold; /* Делаем шрифт жирным */
+    
+}
+</style>
+
+<body>
+     <div class="Centroo">
+        <p>
+            <a href="_index.html"><button>
+                <span class="button_top"> Back </span>
+            </button></a>
+            <a href="#" onclick="filterCharacters('control')"><button>
+                <span class="button_top"> Control </span>
+            </button></a>
+            <a href="#" onclick="filterCharacters('atack')"><button>
+                <span class="button_top"> Atack </span>
+            </button></a>
+            <a href="#" onclick="showAllCharacters()"><button>
+                <span class="button_top"> Show All </span>
+            </button></a>
+
+        </p>
+    </div>
+
+    <div class="Centroo">
+    <div class="centerr">
+    
+    <div class="set">
+        <div class="conteiner control atack">
+            <a href="grock.html">
+            <img src="static/images/грок.png" alt="картинка">
+        </a>
+            <p class="ww">Grock</p>
+        </div>
+        <div class="conteiner control atack">
+            <a href="leyla.html">
+                <img src="static/images/лейла.png" alt="картинка">
+            </a>
+            <p class="ww">Leyla</p>
+        </div>
+        <div class="conteiner control atack">
+            <a href="atlas.html">
+                <img src="static/images/атлас.png" alt="картинка">
+            </a>
+            <p class="ww">Atlas</p>
+        </div>
+        <div class="conteiner control atack">
+            <a href="kagura.html">
+            <img src="static/images/кагура.png" alt="картинка">
+            </a>
+            <p class="ww">Kagura</p>
+        </div>
+        <div class="conteiner control atack">
+            <a href="luoyi.html">
+                <img src="static/images/лои.png" alt="картинка">
+            </a>
+            <p class="ww">Lou Yi</p>
+        </div>
+        <div class="w">Эта команда ориентирована на контроль и урон. С помощью способностей Грока и Атласа можно обеспечивать стан противников (ещё некое количество стана присутствует у героев Кагура и Лейла), с помощью Ло И мы сможем телепортироваться по карте и совершать внезапное нападение, тем самым и обеспечивать полный контроль над противниками, а Лейла и Кагура основной источник большого урона</div>
+    </div>
+    
+    <div class="set">
+        <div class="conteiner control">
+            <a href="aldos.html">
+            <img src="static/images/алдос.png" alt="картинка">
+        </a>
+            <p class="ww">Aldos</p>
+        </div>
+        <div class="conteiner control">
+            <a href="kaya.html">
+                <img src="static/images/кая.png" alt="картинка">
+            </a>
+            <p class="ww">Kaya</p>
+        </div>
+        <div class="conteiner control">
+            <a href="grock.html">
+            <img src="static/images/грок.png" alt="картинка">
+        </a>
+            <p class="ww">Grock</p>
+        </div>
+        <div class="conteiner control">
+            <a href="lylia.html">
+            <img src="static/images/лилия.png" alt="картинка">
+            </a>
+            <p class="ww">Lylia</p>
+        </div>
+        <div class="conteiner control">
+            <a href="chou.html">
+                <img src="static/images/чу.png" alt="картинка">
+            </a>
+            <p class="ww">Chou</p>
+        </div>
+    </div>
+
+
+    <div class="set">
+        <div class="conteiner control">
+            <a href="franko.html">
+            <img src="static/images/франко.png" alt="картинка">
+        </a>
+            <p class="ww">Franko</p>
+        </div>
+        <div class="conteiner control">
+            <a href="aldos.html">
+            <img src="static/images/алдос.png" alt="картинка">
+        </a>
+            <p class="ww">Aldos</p>
+        </div>
+        <div class="conteiner control">
+            <a href="luoyi.html">
+            <img src="static/images/лои.png" alt="картинка">
+        </a>
+            <p class="ww">Luo Yi</p>
+        </div>
+        <div class="conteiner control">
+            <a href="khufra.html">
+            <img src="static/images/хуфра.png" alt="картинка">
+            </a>
+            <p class="ww">Khufra</p>
+        </div>
+        <div class="conteiner control">
+            <a href="gossen.html">
+                <img src="static/images/госсен.png" alt="картинка">
+            </a>
+            <p class="ww">Gossen</p>
+        </div>
+    </div>
+
+    <div class="set">
+        <div class="conteiner control">
+            <a href="baxii.html">
+            <img src="static/images/баксий.png" alt="картинка">
+        </a>
+            <p class="ww">Baxii</p>
+        </div>
+        <div class="conteiner control">
+            <a href="lylia.html">
+            <img src="static/images/лилия.png" alt="картинка">
+            </a>
+            <p class="ww">Lylia</p>
+        </div>
+        <div class="conteiner control">
+            <a href="kaya.html">
+                <img src="static/images/кая.png" alt="картинка">
+            </a>
+            <p class="ww">Kaya</p>
+        </div>
+        <div class="conteiner control">
+            <a href="chou.html">
+                <img src="static/images/чу.png" alt="картинка">
+            </a>
+            <p class="ww">Chou</p>
+        </div>
+        <div class="conteiner control">
+            <a href="grock.html">
+            <img src="static/images/грок.png" alt="картинка">
+        </a>
+            <p class="ww">Grock</p>
+        </div>
+    </div>
+
+    <div class="set">
+        <div class="conteiner control">
+            <a href="grock.html">
+            <img src="static/images/грок.png" alt="картинка">
+        </a>
+            <p class="ww">Grock</p>
+        </div>
+        <div class="conteiner control">
+            <a href="franko.html">
+            <img src="static/images/франко.png" alt="картинка">
+        </a>
+            <p class="ww">Franko</p>
+        </div>
+        <div class="conteiner control">
+            <a href="luoyi.html">
+            <img src="static/images/лои.png" alt="картинка">
+        </a>
+            <p class="ww">Luo Yi</p>
+        </div>
+        <div class="conteiner control">
+            <a href="khufra.html">
+            <img src="static/images/хуфра.png" alt="картинка">
+            </a>
+            <p class="ww">Khufra</p>
+        </div>
+        <div class="conteiner control">
+            <a href="aldos.html">
+            <img src="static/images/алдос.png" alt="картинка">
+        </a>
+            <p class="ww">Aldos</p>
+        </div>
+    </div>
+
+    <!-- <div class="set">
+        <div class="conteiner control">
+            <a href="character_chou.html">
+                <img src="static/images/чу.png" alt="картинка">
+            </a>
+            <p class="ww">Chou</p>
+        </div>
+        <div class="conteiner control">
+            <a href="character_kaya.html">
+                <img src="static/images/кая.png" alt="картинка">
+            </a>
+            <p class="ww">Kaya</p>
+        </div>
+        <div class="conteiner control">
+            <a href="character_baxii.html">
+            <img src="static/images/баксий.png" alt="картинка">
+        </a>
+            <p class="ww">Baxii</p>
+        </div>
+        <div class="conteiner control">
+            <a href="character_gossen.html">
+                <img src="static/images/госсен.png" alt="картинка">
+            </a>
+            <p class="ww">Gossen</p>
+        </div>
+        <div class="conteiner control">
+            <a href="character_lylia.html">
+            <img src="static/images/лилия.png" alt="картинка">
+            </a>
+            <p class="ww">Lylia</p>
+        </div>
+    </div> -->
+
+    <div class="set">
+        <div class="conteiner atack">
+            <a href="character_grager.html">
+                <img src="static/images/гренджер.png" alt="картинка">
+            </a>
+            <p class="ww">Granger</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_lancelot.html">
+                <img src="static/images/ланселот.png" alt="картинка">
+            </a>
+            <p class="ww">Lancelot</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_hayabusa.html">
+            <img src="static/images/хаябуса.png" alt="картинка">
+        </a>
+            <p class="ww">Hayabusa</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_karrie.html">
+                <img src="static/images/кэрри.png" alt="картинка">
+            </a>
+            <p class="ww">Karrie</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_aldos.html">
+            <img src="static/images/алдос.png" alt="картинка">
+        </a>
+            <p class="ww">Aldos</p>
+        </div>
+    </div>
+
+    <div class="set">
+        <div class="conteiner atack">
+            <a href="character_lesly.html">
+                <img src="static/images/лесли.png" alt="картинка">
+            </a>
+            <p class="ww">Lesly</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_lancelot.html">
+                <img src="static/images/ланселот.png" alt="картинка">
+            </a>
+            <p class="ww">Lancelot</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_bruno.html">
+            <img src="static/images/бруно.png" alt="картинка">
+        </a>
+            <p class="ww">Bruno</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_gossen.html">
+                <img src="static/images/госсен.png" alt="картинка">
+            </a>
+            <p class="ww">Gossen</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_kagura.html">
+            <img src="static/images/кагура.png" alt="картинка">
+        </a>
+            <p class="ww">Kagura</p>
+        </div>
+    </div>
+
+    <div class="set">
+        <div class="conteiner atack">
+            <a href="character_karrie.html">
+                <img src="static/images/кэрри.png" alt="картинка">
+            </a>
+            <p class="ww">Karrie</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_grager.html">
+                <img src="static/images/гренджер.png" alt="картинка">
+            </a>
+            <p class="ww">Granger</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_lesly.html">
+                <img src="static/images/лесли.png" alt="картинка">
+            </a>
+            <p class="ww">Lesly</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_lancelot.html">
+                <img src="static/images/ланселот.png" alt="картинка">
+            </a>
+            <p class="ww">Lancelot</p>
+        </div>
+        <div class="conteiner atack">
+            <a href="character_hayabusa.html">
+            <img src="static/images/хаябуса.png" alt="картинка">
+        </a>
+            <p class="ww">Hayabusa</p>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+<!-- ctrl + / -->
+     
+        </div>
+    </div> 
+    <script>
+        function filterCharacters(role) {
+            const containers = document.querySelectorAll('.conteiner');
+            containers.forEach(container => {
+                if (!container.classList.contains(role)) {
+                    container.classList.add('hidden');
+                } else {
+                    container.classList.remove('hidden');
+                }
+            });
+        }
+
+        function showAllCharacters() {
+            const containers = document.querySelectorAll('.conteiner');
+            containers.forEach(container => {
+                container.classList.remove('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

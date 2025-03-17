@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <!-- <link rel="stylesheet" href="static/styles/styles.css"> -->
+    <link rel="stylesheet" href="static/styles/characters.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<style>
+    .set {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the items horizontally */
+    margin-bottom: 30px; /* Space between the sets */
+    }
+
+    img {
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Center the image */
+    }
+
+    .conteiner {
+        margin: 15px; /* Add some space between characters */
+        display: inline-block; /* Позволяет располагать элементы в строку */
+        text-align: center; }
+    /* }Центрирует текст под изображением */
+    
+    .hidden {
+        display: none; /* Class to hide elements */
+    }
+    .ww {
+        margin-top: 5px; /* Уменьшает отступ сверху для имен */
+        font-size: 20px; /* Увеличиваем размер шрифта */
+        font-weight: bold; /* Делаем шрифт жирным */
+    
+}
+</style>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    .container {
+        display: flex;
+    }
+    .character-list {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    .character-item {
+        margin-bottom: 10px;
+    }
+    .description {
+        max-width: 400px;
+    }
+    .description {
+    color: #cf8a9f; /* Change this to your desired text color */
+    line-height: 1.2; /* Reduces the space between lines of text */
+    margin-top: 10px; /* Adjusts the space above the description */
+    margin-bottom: 10px; /* Adjusts the space below the description */
+}
+
+.description p {
+    margin: 5px 0; /* Reduces the space between paragraphs */
+}
+    
+</style>
+
+<body>
+     <div class="Centroo">
+        <p>
+            <a href="_index.html"><button>
+                <span class="button_top"> Back </span>
+            </button></a>
+            <a href="#" onclick="filterCharacters('control')"><button>
+                <span class="button_top"> Control </span>
+            </button></a>
+            <a href="#" onclick="filterCharacters('damage')"><button>
+                <span class="button_top"> Damage </span>
+            </button></a>
+            <a href="#" onclick="filterCharacters('surviv')"><button>
+                <span class="button_top"> Survivability </span>
+            </button></a>
+            <a href="#" onclick="filterCharacters('supp')"><button>
+                <span class="button_top"> Support </span>
+            </button></a>
+            <a href="#" onclick="filterCharacters('mob')"><button>
+                <span class="button_top"> Mobility </span>
+            </button></a>
+            <a href="#" onclick="showAllCharacters()"><button>
+                <span class="button_top"> Show All </span>
+            </button></a>
+
+        </p>
+    </div>
+<div class="character-set">
+    <div class="set">
+        <div class="conteiner control damage">
+            <a href="aldos.html">
+            <img src="static/images/алдос.png" alt="картинка">
+        </a>
+            <p class="ww">Aldos</p>
+        </div>
+        <div class="conteiner control damage">
+            <a href="kaya.html">
+                <img src="static/images/кая.png" alt="картинка">
+            </a>
+            <p class="ww">Kaya</p>
+        </div>
+        <div class="conteiner control damage">
+            <a href="lylia.html">
+                <img src="static/images/лилия.png" alt="картинка">
+            </a>
+            <p class="ww">Lylia</p>
+        </div>
+        <div class="conteiner control damage">
+            <a href="chou.html">
+            <img src="static/images/чу.png" alt="картинка">
+            </a>
+            <p class="ww">Chou</p>
+        </div>
+        <div class="conteiner control damage">
+            <a href="gossen.html">
+                <img src="static/images/госсен.png" alt="картинка">
+            </a>
+            <p class="ww">Gossen</p>
+        </div>
+    
+    
+        <div class="description control damage">
+            <p><strong>Урон и контроль</strong></p>
+            <p><strong>Алдос (Урон):</strong> наносит урон и может быстро убить противника.</p>
+            <p><strong>Кая (Контроль):</strong> обеспечивает контроль над врагами с помощью их захвата.</p>
+            <p><strong>Лилия (Урон):</strong> наносит AoE-урон с помощью своих способностей.</p>
+            <p><strong>Чу (Контроль):</strong> отлично подходит для прерывания действий соперников.</p>
+            <p><strong>Госсен (Урон):</strong> быстро наносит урон и может легко убить врагов.</p>
+        </div>
+    </div>
+</div>
+
+<div class="character-set">
+    <div class="set">
+        <div class="conteiner supp surviv">
+            <a href="aldos.html">
+                <img src="static/images/алдос.png" alt="картинка">
+            </a>
+                <p class="ww">Aldos</p>
+            </div>
+        <div class="conteiner supp surviv">
+            <a href="rafael.html">
+                <img src="static/images/рафаэль.png" alt="картинка">
+            </a>
+            <p class="ww">Rafael</p>
+        </div>
+        <div class="conteiner supp surviv">
+            <a href="tigril.html">
+                <img src="static/images/тигрил.png" alt="картинка">
+            </a>
+            <p class="ww">Tigril</p>
+        </div>
+        <div class="conteiner supp surviv">
+            <a href="terizla.html">
+            <img src="static/images/тэризла.png" alt="картинка">
+            </a>
+            <p class="ww">Terizla</p>
+        </div>
+        <div class="conteiner supp surviv">
+            <a href="minsittar.html">
+                <img src="static/images/минситар.png" alt="картинка">
+            </a>
+            <p class="ww">Minsittar</p>
+        </div>
+        <div class="description supp surviv">
+            <p><strong>Поддержка и живучесть</strong></p>
+            <p><strong>Олдос (Урон):</strong> может взять на себя урон и быстро уничтожить врагов.</p>
+            <p><strong>Рафаэль (Поддержка):</strong> лечит союзников и обеспечивает дополнительную мобильность.</p>
+            <p><strong>Тигрил (Живучесть):</strong> принимает на себя ущерб и защиту команды.</p>
+            <p><strong>Тэризла (Живучесть):</strong> обеспечивает защиту и контроль над врагами.</p>
+            <p><strong>Минситтар (Поддержка):</strong> создает зону контроля и помогает камере.</p>
+        </div>
+    </div>
+</div>
+
+<div class="character-set">
+    <div class="set">
+        <div class="conteiner mob damage">
+            <a href="lancelot.html">
+                <img src="static/images/ланселот.png" alt="картинка">
+            </a>
+                <p class="ww">Lancelot</p>
+            </div>
+        <div class="conteiner mob damage">
+            <a href="hayabusa.html">
+                <img src="static/images/хаябуса.png" alt="картинка">
+            </a>
+            <p class="ww">Hayabusa</p>
+        </div>
+        <div class="conteiner mob damage">
+            <a href="granger.html">
+                <img src="static/images/гренджер.png" alt="картинка">
+            </a>
+            <p class="ww">Granger</p>
+        </div>
+        <div class="conteiner mob damage">
+            <a href="selena.html">
+            <img src="static/images/селена.png" alt="картинка">
+            </a>
+            <p class="ww">Selena</p>
+        </div>
+        <div class="conteiner mob damage">
+            <a href="fanny.html">
+                <img src="static/images/фанни.png" alt="картинка">
+            </a>
+            <p class="ww">Fanny</p>
+        </div>
+        <div class="description mob damage">
+            <p><strong>Мобильность и урон</strong></p>
+            <p><strong>Ланселот (Мобильность):</strong> быстро перемещается по полу боя, нанося урон.</p>
+            <p><strong>Хаябуса (Мобильность):</strong> может мгновенно перемещаться и атаковать врагов.</p>
+            <p><strong>Грейнджер (Урон):</strong> наносит большой урон на расстоянии.</p>
+            <p><strong>Селена (Урон):</strong> обеспечивает контроль и урон с помощью своих способностей.</p>
+            <p><strong>Фанни (Мобильность):</strong> невероятно мобильна и может легко обходить врагов.</p>
+        </div>
+    </div>
+</div>
+
+<div class="character-set">
+    <div class="set">
+        <div class="conteiner supp control">
+            <a href="kaya.html">
+                <img src="static/images/кая.png" alt="картинка">
+            </a>
+                <p class="ww">Kaya</p>
+            </div>
+        <div class="conteiner supp control">
+            <a href="tigril.html">
+                <img src="static/images/тигрил.png" alt="картинка">
+            </a>
+            <p class="ww">Tigril</p>
+        </div>
+        <div class="conteiner supp control">
+            <a href="rafael.html">
+                <img src="static/images/рафаэль.png" alt="картинка">
+            </a>
+            <p class="ww">Rafael</p>
+        </div>
+        <div class="conteiner supp control">
+            <a href="lylia.html">
+            <img src="static/images/лилия.png" alt="картинка">
+            </a>
+            <p class="ww">Lylia</p>
+        </div>
+        <div class="conteiner supp control">
+            <a href="akai.html">
+                <img src="static/images/акай.png" alt="картинка">
+            </a>
+            <p class="ww">Akai</p>
+        </div>
+        <div class="description supp control">
+            <p><strong>Поддержка и контроль</strong></p>
+            <p><strong>Кая (Контроль):</strong> захватывает врагов и помогает команде.</p>
+            <p><strong>Тигрил (Поддержка):</strong> поддержка союзников и обеспечение контроля на поле боя.</p>
+            <p><strong>Рафаэль (Поддержка):</strong> лечение и помощь союзникам.</p>
+            <p><strong>Лилия (Контроль):</strong> наносит урон и замедляет врагов.</p>
+            <p><strong>Акай (Контроль):</strong> поражает врагов толку и создает барьеры.</p>
+        </div>
+    </div>
+</div>
+
+<div class="character-set">
+    <div class="set">
+        <div class="conteiner surviv damage">
+            <a href="leomord.html">
+                <img src="static/images/леоморд.png" alt="картинка">
+            </a>
+                <p class="ww">Leomord</p>
+            </div>
+        <div class="conteiner surviv damage">
+            <a href="martis.html">
+                <img src="static/images/мартис.png" alt="картинка">
+            </a>
+            <p class="ww">Martis</p>
+        </div>
+        <div class="conteiner surviv damage">
+            <a href="grock.html">
+                <img src="static/images/грок.png" alt="картинка">
+            </a>
+            <p class="ww">Grock</p>
+        </div>
+        <div class="conteiner surviv damage">
+            <a href="lancelot.html">
+            <img src="static/images/ланселот.png" alt="картинка">
+            </a>
+            <p class="ww">Lancelot</p>
+        </div>
+        <div class="conteiner surviv damage">
+            <a href="aldos.html">
+                <img src="static/images/алдос.png" alt="картинка">
+            </a>
+            <p class="ww">Aldos</p>
+        </div>
+        <div class="description surviv damage">
+            <p><strong>Живучесть и урон</strong></p>
+            <p><strong>Леоморд (Живучесть):</strong> может нанести много урона и носить его.</p>
+            <p><strong>Мартис (Урон):</strong> наносит колоссальный урон в ближнем бою.</p>
+            <p><strong>Грок (Живучесть):</strong> обеспечивает защиту и контроль.</p>
+            <p><strong>Ланселот (Урон):</strong> быстро убивает врагов.</p>
+            <p><strong>Алдос (Урон):</strong> может быстро завершить настройку.</p>
+        </div>
+    </div>
+</div>
+<!-- ctrl + / -->
+     
+</div>     
+    </div> 
+    <script>
+        function filterCharacters(role) {
+    const characterSets = document.querySelectorAll('.character-set');
+
+    characterSets.forEach(set => {
+        const containers = set.querySelectorAll('.conteiner');
+        let hasVisibleCharacters = false; // Flag to check if any character is visible
+
+        containers.forEach(container => {
+            if (!container.classList.contains(role)) {
+                container.classList.add('hidden');
+            } else {
+                container.classList.remove('hidden');
+                hasVisibleCharacters = true; // Set flag to true if a character is visible
+            }
+        });
+
+        const description = set.querySelector('.description');
+        // Hide the description if no characters are visible
+        description.style.display = hasVisibleCharacters ? 'block' : 'none';
+    });
+}
+
+function showAllCharacters() {
+    const characterSets = document.querySelectorAll('.character-set');
+
+    characterSets.forEach(set => {
+        const containers = set.querySelectorAll('.conteiner');
+        containers.forEach(container => {
+            container.classList.remove('hidden');
+        });
+        const description = set.querySelector('.description');
+        description.style.display = 'block'; // Show description when showing all
+    });
+}
+    </script>
+</body>
+</html>
